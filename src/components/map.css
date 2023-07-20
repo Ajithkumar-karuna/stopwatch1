@@ -1,0 +1,70 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .time-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor:grabbing;
+    background-color: #3498db;
+    color: #fff;
+  }
+
+  
+  button:hover {
+    background-color: #d408c0;
+  }
+.image{
+    background-image: url('https://burst.shopifycdn.com/photos/bright-yellow-brick.jpg?width=1200&format=pjpg&exif=1&iptc=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+    
+    
+} 
+
+.glowing-element {
+    box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.7),rgb(181, 108, 108);
+    animation: glowing 2s ease-in-out infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 5px 15px 5px rgba(255, 165, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 5px 30px 10px rgba(0, 217, 255, 0.9);
+    }
+    100% {
+      box-shadow: 0 5px 15px 10px rgba(226, 250, 5, 0.7);
+    }
+  }
+  
+  .element::after{
+   
+    width: 200px;
+    height: 100px;
+    transition: background 0.3s ease; 
+  }
+  
+  .element:hover {
+   
+    background: linear-gradient(to right, #9bca9b, #adb669,rgb(222, 166, 217));
+  }
+  
